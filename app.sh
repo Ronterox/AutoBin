@@ -8,7 +8,7 @@ if [ $# -eq 2 ]; then
 
   cat $filename
 
-  ln -s -T $(pwd)/$filename "/usr/bin/$2"
+  ln -s -T $PWD/$filename "/usr/bin/$2"
 else
   echo -e "\nTry: autobin [exec] [name]\n"
 fi
